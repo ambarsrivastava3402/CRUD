@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-  	app header will be here
+  	App header will be here
   </header>
 
   <div>  

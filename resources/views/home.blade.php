@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
 <div>
-	<h1>homepage data</h1>
+	<h1>Homepage Data</h1>
 </div>
 @stop
