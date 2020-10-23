@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Restaurant;
 class RestoController extends Controller
 {
      function index(){
@@ -11,7 +11,9 @@ class RestoController extends Controller
     }
      
      function list(){
-        return view('list');
+        
+        $data = Restaurant::all();
+        return view('list',['data'=>$data]);
     }
 }
 
