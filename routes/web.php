@@ -12,16 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+route::get('/','RestoController@index');
 
-Route::get('/', function () {
-    return view('welcome');
+/*Route::get('/', function () {
+       return view('welcome');
 });
-<<<<<<< HEAD
-
-
-
-Route::get('/', function () {
-    return view('welcomehh');
-});
-=======
->>>>>>> 79a4b563285f45bb882f176caca005e3c873d514
