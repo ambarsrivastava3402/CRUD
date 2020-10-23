@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
  route::get('/','RestoController@index');
+ route::get('/list','RestoController@list');
 
 /*Route::get('/', function () {
        return view('welcome');
