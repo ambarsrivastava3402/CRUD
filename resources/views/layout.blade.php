@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>
     <link rel="stylesheet"  href="{{asset('css/custom.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
@@ -19,7 +20,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="/list">List</a>
-      <a class="nav-item nav-link" href="#">Add</a>
+      <a class="nav-item nav-link" href="/add">Add</a>
       <a class="nav-item nav-link" href="#">Search</a>
       <a class="nav-item nav-link" href="#">Login</a>
       <a class="nav-item nav-link" href="#">Register</a>

@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
  route::get('/','RestoController@index');
  route::get('/list','RestoController@list');
+ route::post('/add','RestoController@add');
+ route::view('/add','add');
+ route::get('/delete/{id}','RestoController@delete');
 
 /*Route::get('/', function () {
        return view('welcome');
