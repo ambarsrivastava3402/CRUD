@@ -20,6 +20,15 @@
 </div>
 
   @endif
+   @if(Session::get('status3'))
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+  Restaurant updated successfully
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+  @endif
 <table class="table">
   <thead>
     <tr>
@@ -38,6 +47,7 @@
       <td>{{$rest->email}}</td>
       <td>{{$rest->address}}</td>
       <td><a href="delete/{{$rest->id}}"><i class="fa fa-trash"></i></a></td>
+       <td><a href="edit/{{$rest->id}}"><i class="fa fa-edit"></i></a></td>
     </tr>
     @endforeach
   </tbody>

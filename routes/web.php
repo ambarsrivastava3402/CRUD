@@ -17,7 +17,12 @@ use Illuminate\Support\Facades\Route;
  route::post('/add','RestoController@add');
  route::view('/add','add');
  route::get('/delete/{id}','RestoController@delete');
-
+ route::get('/edit/{id}','RestoController@edit');
+ route::post('/edit','RestoController@update');
+ Route::view('/register','register');
+ route::post('/register','RestoController@register');
+ route::view('/login','login');
+ route::post('/login','RestoController@login');
 /*Route::get('/', function () {
        return view('welcome');
 });

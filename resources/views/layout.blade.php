@@ -21,9 +21,13 @@
       <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="/list">List</a>
       <a class="nav-item nav-link" href="/add">Add</a>
-      <a class="nav-item nav-link" href="#">Search</a>
-      <a class="nav-item nav-link" href="#">Login</a>
-      <a class="nav-item nav-link" href="#">Register</a>
+     
+      @if(Session::get('muser'))
+      <a class="nav-item nav-link" href="register"><h5>Welcome {{Session::get('muser')}}</h5> </a>
+      @else
+      <a class="nav-item nav-link" href="/login">Login</a>
+      <a class="nav-item nav-link" href="register">Register</a>
+      @endif
       
     </div>
   </div>
