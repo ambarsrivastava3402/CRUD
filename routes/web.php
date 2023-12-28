@@ -12,16 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
+ route::get('/','RestoController@index');
+ route::get('/list','RestoController@list');
+ route::post('/add','RestoController@add');
+ route::view('/add','add');
+ route::get('/delete/{id}','RestoController@delete');
+ route::get('/edit/{id}','RestoController@edit');
+ route::post('/edit','RestoController@update');
+ Route::view('/register','register');
+ route::post('/register','RestoController@register');
+ route::view('/login','login');
+ route::post('/login','RestoController@login');
+/*Route::get('/', function () {
+       return view('welcome');
 });
-<<<<<<< HEAD
-
-
-
-Route::get('/', function () {
-    return view('welcomehh');
-});
-=======
->>>>>>> 79a4b563285f45bb882f176caca005e3c873d514
